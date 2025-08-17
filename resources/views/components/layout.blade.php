@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Developer | Raffy Ramos</title>
     @production
-        <link rel="stylesheet" href="build/assets/app-kNP4s03a.css">
+        <link rel="stylesheet" href="{{ Vite::asset('resources/css/app.css') }}">
+        <script type="module" src="{{ Vite::asset('resources/js/app.js') }}"></script>
     @endproduction
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    @env('local')
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @endenv
+
 </head>
 
 <body>
@@ -23,9 +28,7 @@
         <x-footer />
     </div>
 
-    @production
-        <script src="build/assets/app-DtCVKgHt.js"></script>
-    @endproduction
+
 
 </body>
 
