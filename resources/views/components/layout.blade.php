@@ -8,8 +8,8 @@
 
     {{-- Production: use Vite::asset to get hashed files --}}
     @production
-        <link rel="stylesheet" href="build/assets/app-BFk5TTys.css">
-        <script type="module" src="build/assets/app-DtCVKgHt.js"></script>
+        <link rel="stylesheet" href="{{ asset('build/assets/app-BFk5TTys.css') }}">
+        <script type="module" src="{{ asset('build/assets/app-DtCVKgHt.js') }}"></script>
     @endproduction
 
     {{-- Local dev: use Vite dev server --}}
