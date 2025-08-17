@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div>
-                <img src="{{ asset('storage/' . $image->image_path) ?? '' }}" alt="homepage image">
+                <img src="{{ asset('storage/' . $image->image_path) }}" alt="homepage image">
             </div>
 
         </div>
